@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>simple xor decrypted</title>
+</head>
+<body>
+
+
+<form action="/simpleXor/encrypt" method="POST">
+    <h3>Select the right decryption</h3>
+        <% for(index in decrypted){ %>
+            <%= index %>, <%= decrypted[index] %> : <input type="radio" name="xor" value="<%= index %>"> <br>
+        <% } %>
+    Your name : <input type="text" name="data">
+    <button type="submit">submit</button>
+</form>
+
+
+</body>
+</html>

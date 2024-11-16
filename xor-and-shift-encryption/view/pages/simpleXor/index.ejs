@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>simple xor</title>
+</head>
+<body>
+<h1>Decrypt</h1>
+<form action="/simpleXor/decrypt" method="POST">
+    Encrypted text(string of hex seperated by space) : <input type="text" name="data">
+    <button type="submit">submit</button>
+</form>
+
+<hr>
+<br>
+
+<h1>Encrypt</h1>
+<form action="/simpleXor/encrypt" method="POST">
+    Text : <input type="text" name="data"><br><br>
+    Xor number(1-255) : <input type="number" name="xor"  value="1">
+    <button type="submit">submit</button>
+</form>
+
+</body>
+</html>
